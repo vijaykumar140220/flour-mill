@@ -1,0 +1,361 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    text-decoration: underline;
+    color: #ffc107;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.back{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('bg1.jpg') center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    color: white;
+    padding: 1rem 0;
+}
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} */
+.logo{
+    display: flex;
+}
+.logo h2{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.logo img {
+    height: 50px;
+    margin: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffdb70;
+}
+/* ... (previous CSS styles) ... */
+
+.images{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.products h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    margin-top: 100px;
+}
+
+.product-item {
+    margin: 2rem;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+/* ... (remaining CSS styles) ... */
+
+/* About Section */
+.about {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
+}
+.about h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.about img{
+    margin-top: 30px;
+}
+.about p{
+    margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+.contact h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.contact p{
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button.btn {
+    width: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button.btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+#icon{
+    display: none;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: lightseagreen;
+    }
+    #icon{
+        display: block;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 6rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .products{
+        height: 250vh;
+    }
+    .images{
+        display: block;
+        text-align: center;
+    }
+    .about img{
+        height: 150px;
+        width: 200px;    
+    }
+
+    form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+    
+
+}
